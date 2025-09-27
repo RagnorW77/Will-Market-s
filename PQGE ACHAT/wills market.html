@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Will’s Market - Accueil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Perpetua', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2891fa;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1d0dce;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1400x400') no-repeat center center/cover;
+            color: #ffffff;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            width: 250px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        /* Responsive styles */
+        @media (max-width: 900px) {
+            .products {
+                gap: 20px;
+            }
+            .product-card {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 5px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 0;
+            }
+            nav a {
+                margin: 8px 0;
+                font-size: 1.1em;
+            }
+            .hero {
+                font-size: 1.3em;
+                height: 180px;
+                padding: 10px;
+            }
+            .section {
+                padding: 20px 5px;
+            }
+            .products {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            .product-card {
+                width: 95%;
+                margin-bottom: 15px;
+            }
+            .product-card img {
+                height: 140px;
+            }
+            footer {
+                padding: 15px 5px;
+                font-size: 0.95em;
+            }
+        }
+
+        .product-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .product-card p {
+            padding: 0 10px 15px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Will’s Market</h1>
+    <p>Votre boutique en ligne de confiance</p>
+</header>
+
+<nav><a href="#">Accueil</a> <a href="#">Produits</a> <a href="#">Produits</a> <a href="#">À prapos</a> <a href="#">Contact</a>
+   
+   
+    
+    
+</nav>
+
+<div class="hero">
+    Bienvenue chez Will’s Market
+</div>
+
+<section class="section">
+    <h2>Produits en Vedette</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="food2.jpg" alt="Crème visage">
+
+            <h3>le Ndole avec les gambass</h3>
+            <p>La cuisine Sawa.</p>
+        </div>
+        <div class="product-card">
+            <img src="food1.jpg" alt="Produit 2">
+            <h3>Gateau au chocolat</h3>
+            <p>Le Meilleur de la Patiserie Camerounaise.</p>
+        </div>
+        <div class="product-card">
+            <img src="serveur.png" alt="Produit 3">
+            <h3>Serveur HP Proliant</h3>
+            <p>Compact, économique et performant.</p>
+        </div>
+        <div>
+            <div class="product-card">
+                <img src="food3.jpg" alt="produit 4">
+                <h3>Poisson fume avec du manioc.</h3>
+                <p>Toujours de la cuisine Camerounaise</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Will’s Market. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
